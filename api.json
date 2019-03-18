@@ -1,0 +1,49 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"version": "v1",
+		"title": "Timestamp Server",
+    	"description": "A Timestamp server API based on Swagger and built using Node.js"
+	},
+	"paths": {
+		"/{dateVal}": {
+			"get": {
+				"operationId": "get_date",
+				"consumes": [],
+				"produces": ["application/json",
+				"text/json"],
+				"parameters": [{
+					"name": "dateVal",
+					"in": "path",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Date"
+							}
+						}
+					}
+				},
+				"deprecated": false
+			}
+		}
+	},
+	"definitions": {
+		"Date": {
+			"type": "object",
+			"properties": {
+				"unixDate": {
+					"type": "string"
+				},
+				"naturalDate": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{
+    "appService.zipIgnorePattern": [
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/f42ebac1-4223-4519-8f20-282009ed9e82/resourceGroups/appsvc_rg_linux_centralus/providers/Microsoft.Web/sites/ZwalaFirstNodeApp",
+    "appService.deploySubpath": ""
+}
